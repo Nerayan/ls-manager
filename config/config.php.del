@@ -1,0 +1,10 @@
+<?php
+$SET = array(
+    'db' => array(
+        'host' => 'localhost',
+        'schem' => 'ZCTRL',
+        'user' => 'root',
+        'pass' => '1',
+
+    ),
+);

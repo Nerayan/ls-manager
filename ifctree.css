@@ -1,0 +1,56 @@
+.tree ul, .treeview li {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.tree input {
+	position: absolute;
+	opacity: 0;
+}
+.tree {
+	font: normal 12px "Segoe UI", Arial, Sans-serif;
+	/*-moz-user-select: none;
+	//-webkit-user-select: none;*/
+	user-select: none;
+}
+.tree span {
+	color: #00f;
+	text-decoration: none;
+}
+.tree span:hover		{ text-decoration: underline;	}
+.tree input + label + ul	{ margin: 0 0 0 22px; }
+.tree input ~ ul		{ display: none; }
+.tree label,
+.tree label::before	{ cursor: pointer; }
+.tree input:disabled + label {
+	cursor: default;
+	opacity: .6;
+}
+.tree input:checked:not(:disabled) ~ ul {
+	display: block;
+}
+.tree label,
+.tree label::before {
+	background: url("tree-icons.png") no-repeat;
+}
+.tree label,
+.tree span,
+.tree label::before {
+	display: inline-block;
+	height: 16px;
+	line-height: 16px;
+	vertical-align: middle;
+}
+.tree label	{
+		background-position: 18px 0;
+}
+.tree label::before {
+	content: "";
+	width: 16px;
+	margin: 0 22px 0 0;
+	vertical-align: middle;
+	background-position: 0 -32px;
+}
+.tree input:checked + label::before {
+	background-position: 0 -16px;
+}

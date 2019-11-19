@@ -1,0 +1,8 @@
+Content-type: application/xml
+Cache-control: no-cache
+
+<select xmlns="http://www.w3.org/1999/xhtml">
+    <option value="1aa"/>
+    <option value="2aabb"/>
+    <option value="3bbcc"/>
+</select>

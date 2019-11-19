@@ -1,0 +1,12 @@
+.form_wall {
+    position: fixed;
+}
+.form_wall.form {
+    display: block;
+}
+.form_element {
+    position: relative;
+}
+input.form_element {
+    font-size: 0.7rem;
+}
